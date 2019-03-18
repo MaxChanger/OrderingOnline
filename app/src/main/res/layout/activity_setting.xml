@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F2F2F2"
+android:orientation="vertical"
+tools:context="com.k.neleme.SettingActivity">
+<RelativeLayout
+    android:id="@+id/scu_main_MainTitle"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/Btn_Course_Back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_main_head"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_action_back"
+                android:gravity="center_vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Text_Course_Title"
+                style="@style/TitleBarText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+<com.k.neleme.ItemView
+    android:id="@+id/nickName"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_nick_name"
+    app:left_text="用户名"
+    app:right_text="锦玉"
+    />
+
+<com.k.neleme.ItemView
+    android:id="@+id/sex"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_sex"
+    app:left_text="性别"
+    app:right_text="男" />
+
+<com.k.neleme.ItemView
+    android:id="@+id/school"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_school_24dp"
+    app:left_text="学校"
+    app:right_text="四川师范大学" />
+
+<com.k.neleme.ItemView
+    android:id="@+id/signName"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_sign_name"
+    app:left_text="个性签名"
+    app:right_text="像风一样自由" />
+
+<com.k.neleme.ItemView
+    android:id="@+id/background"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginTop="15dp"
+    app:left_icon="@drawable/ic_theme_24dp"
+    app:left_text="主题"
+    app:right_text="" />
+<com.k.neleme.ItemView
+    android:id="@+id/language"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_language_24dp"
+    app:left_text="语言选项"
+    app:right_text="" />
+
+<com.k.neleme.ItemView
+    android:id="@+id/pass"
+    android:layout_marginTop="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_pass"
+    app:left_text="修改密码"
+    app:right_text="" />
+
+<com.k.neleme.ItemView
+    android:id="@+id/cache"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_cache_24dp"
+    app:left_text="缓存清理"
+    app:right_text="" />
+<com.k.neleme.ItemView
+    android:id="@+id/about"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_about"
+    app:left_text="历史订单"
+    app:right_text="" />
+
+<com.k.neleme.ItemView
+    android:id="@+id/help"
+    android:layout_marginTop="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_help_24dp"
+    app:left_text="获取帮助"
+    app:right_text="" />
+
+<com.k.neleme.ItemView
+    android:id="@+id/exit"
+    android:layout_marginTop="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    app:left_icon="@drawable/ic_exit_24dp"
+    app:left_text="退出登录"
+    app:right_text="" />
+</LinearLayout>

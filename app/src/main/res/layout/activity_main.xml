@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:splitMotionEvents="false">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="25dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_behavior="com.k.neleme.behaviors.AppBarBehavior">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_behavior="@string/scroll_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/cut_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="新用户下单立加11元" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="expendCut"
+                android:text="8个活动"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/cut_style"
+            android:text="满20减21，满50减55，满100减200" />
+
+        <TextView
+            style="@style/cut_style"
+            android:text="进店领10折优惠券" />
+
+        <TextView
+            style="@style/cut_style"
+            android:text="虽然店名有些随意了" />
+
+        <TextView
+            style="@style/cut_style"
+            android:text="因为我还没有接到广告" />
+
+        <TextView
+            style="@style/cut_style"
+            android:text="但是给个star我会很有动力的" />
+
+        <TextView style="@style/cut_style" />
+    </LinearLayout>
+
+    <com.k.neleme.Views.ShopInfoContainer
+        android:id="@+id/shopcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toShopDetail"
+        app:layout_behavior="com.k.neleme.behaviors.ShopContainerBehavior" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="25dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_menu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/icon_car" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cut_margin"
+        android:orientation="vertical"
+        app:layout_behavior="@string/scroll_behavior">
+
+        <com.shizhefei.view.indicator.ScrollIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/underline" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+    <include layout="@layout/view_black" />
+
+    <include layout="@layout/view_carpop" />
+
+    <include layout="@layout/view_car" />
+
+</android.support.design.widget.CoordinatorLayout>

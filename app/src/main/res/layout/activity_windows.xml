@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@drawable/bg_main_bitmap">
+
+    <RelativeLayout
+        android:id="@+id/name_container"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/black_blackground">
+
+        <ImageView
+            android:id="@+id/tv_shop_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/nav_icon_male" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tv_shop_arrow"
+            android:text="锦 玉"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/tv_shop_arrow"
+            android:maxLines="2"
+            android:text="欢迎使用学校食堂在线订餐系统"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/niji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_shop_arrow"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/yellow"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="2016级"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_shop_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shop_arrow"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tv_shop_arrow"
+            android:background="@color/dodgerblue"
+            android:maxLines="1"
+            android:paddingLeft="1dp"
+            android:paddingRight="2dp"
+            android:text="数学科学学院"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <com.itheima.pulltorefreshlib.PullToRefreshListView
+        android:id="@+id/pull_to_refresh_list_view"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_container"
+        android:divider="#00000000"
+        android:dividerHeight="18dp">
+
+    </com.itheima.pulltorefreshlib.PullToRefreshListView>
+
+</RelativeLayout>
