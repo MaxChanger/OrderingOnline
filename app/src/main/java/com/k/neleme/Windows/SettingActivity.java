@@ -1,4 +1,4 @@
-package com.k.neleme;
+package com.k.neleme.Windows;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.k.neleme.ItemView;
+import com.k.neleme.Login.LoginActivity;
+import com.k.neleme.R;
 
 
 public class SettingActivity extends AppCompatActivity {

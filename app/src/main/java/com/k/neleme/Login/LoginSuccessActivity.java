@@ -1,8 +1,10 @@
-package com.k.neleme;
+package com.k.neleme.Login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Explode;
+
+import com.k.neleme.R;
 
 public class LoginSuccessActivity extends AppCompatActivity {
 

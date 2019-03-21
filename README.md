@@ -8,6 +8,19 @@
 - 防饿了吗点餐主页 [链接](https://github.com/wudifamo/Neleme)
 - 结算页面 [链接](https://github.com/a5533348/PayUI/)
 
+### 各个包功能
 
+- **Windows**
+  - WindowsActivity 食堂列表界面，点击某食堂进入其食堂主页
+  - SettingActivity 个人设置界面
+
+- **payui**
+  - 结算界面，该包的功能是实现防支付界面
+- **Login**
+  - 包括注册界面和登录界面
+- **MainActivity**
+  - 食堂点餐主页面，添加购物车
+- **bean/adapters**
+  - 实现ListView
 
 ![动态展示](./imgshow.gif)

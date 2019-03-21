@@ -1,4 +1,4 @@
-package com.k.neleme;
+package com.k.neleme.adapters;
 
 import android.widget.ArrayAdapter;
 import android.content.Context;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.k.neleme.R;
+import com.k.neleme.bean.Shop;
 
 import java.util.List;
 /**

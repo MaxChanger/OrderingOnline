@@ -20,17 +20,17 @@
             android:name=".detail.DetailActivity"
             android:theme="@style/NoTitleTranslucentTheme" />
         <activity android:name=".detail.ShopDetailActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginSuccessActivity" />
-        <activity android:name=".WindowsActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".Login.LoginSuccessActivity" />
+        <activity android:name=".Windows.WindowsActivity" />
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".Windows.SettingActivity"></activity>
         <activity android:name="com.k.neleme.payui.MainActivity"> </activity>
     </application>
 

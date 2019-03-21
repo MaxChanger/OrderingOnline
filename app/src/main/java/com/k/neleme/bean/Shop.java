@@ -1,4 +1,4 @@
-package com.k.neleme;
+package com.k.neleme.bean;
 
 /**
  * Created by MaxChanger on 2019/3/14.

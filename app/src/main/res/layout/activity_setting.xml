@@ -6,7 +6,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="#F2F2F2"
 android:orientation="vertical"
-tools:context="com.k.neleme.SettingActivity">
+tools:context="com.k.neleme.Windows.SettingActivity">
 <RelativeLayout
     android:id="@+id/scu_main_MainTitle"
     android:layout_width="match_parent"

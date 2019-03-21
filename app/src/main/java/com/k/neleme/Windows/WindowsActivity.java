@@ -1,4 +1,4 @@
-package com.k.neleme;
+package com.k.neleme.Windows;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,10 @@ import android.widget.RelativeLayout;
 
 import com.itheima.pulltorefreshlib.PullToRefreshBase;
 import com.itheima.pulltorefreshlib.PullToRefreshListView;
+import com.k.neleme.MainActivity;
+import com.k.neleme.R;
+import com.k.neleme.adapters.ShopAdapter;
+import com.k.neleme.bean.Shop;
 
 import java.util.ArrayList;
 import java.util.List;

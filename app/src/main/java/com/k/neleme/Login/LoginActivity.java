@@ -1,4 +1,4 @@
-package com.k.neleme;
+package com.k.neleme.Login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,9 @@ import android.transition.Explode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.k.neleme.R;
+import com.k.neleme.Windows.WindowsActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.k.neleme.R;
-import com.k.neleme.WindowsActivity;
+import com.k.neleme.Windows.WindowsActivity;
 
 public class MainActivity extends AppCompatActivity implements PayPwdView.InputCallBack, View.OnClickListener {
     private String money;
